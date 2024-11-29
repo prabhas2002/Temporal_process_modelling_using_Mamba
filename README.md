@@ -51,13 +51,6 @@ pwd/
   bash run.sh
   ```
 
-### Viewing Results
-Open the `results.ipynb` notebook to explore:
-- Evaluation metrics: **log-likelihood**, **accuracy**, **RMSE**.
-- Comparative plots showcasing the performance of Mamba-TP vs. THP.
-
----
-
 ## **Evaluation Metrics**
 - **Log-Likelihood**: Measures the probability of observed events under the model.
 - **Accuracy**: Assesses the correctness of event type predictions.
@@ -66,3 +59,14 @@ Open the `results.ipynb` notebook to explore:
 ---
 
 
+### Viewing Results
+Open the `results.ipynb` notebook to explore:
+- Evaluation metrics: **log-likelihood**, **accuracy**, **RMSE**.
+- Comparative plots showcasing the performance of Mamba-TP vs. THP.
+
+---
+
+
+### **Analysis**
+
+Mamba-TP consistently outperforms THP across almost all datasets. This improved performance is attributed to the **state-space models** like Mamba, which possess a higher capacity for capturing **long-range dependencies**. In contrast, while THP leverages self-attention mechanisms, it falls short in effectively modeling temporal dynamics over extended sequences, making Mamba-TP a superior choice for temporal point process modeling.
