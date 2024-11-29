@@ -1,0 +1,11 @@
+torch==2.1.1+cu118
+torchvision==0.16.1+cu118
+torchaudio==2.1.1+cu118
+causal_conv1d==1.1.1
+mamba-ssm==1.2.0.post1
+numpy==1.24.3
+einops==0.6.1
+
+##usage
+
+#pip install -r requirements.txt
